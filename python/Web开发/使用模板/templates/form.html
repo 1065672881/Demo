@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please Sign In</title>
+</head>
+<body>
+    {% if message %}
+  <p style="color:red">{{ message }}</p>
+  {% endif %}
+  <form action="/signin" method="post">
+    <legend>Please sign in:</legend>
+    <p><input name="username" placeholder="Username" value="{{ username }}"></p>
+    <p><input name="password" placeholder="Password" type="password"></p>
+    <p><button type="submit">Sign In</button></p>
+  </form>
+</body>
+</html>
+
+<!--
+    登录失败的模板呢？我们在form.html中加了一点条件判断，把form.html重用为登录失败的模板。
+
+最后，一定要把模板放到正确的templates目录下，templates和app.py在同级目录下：
+-->
