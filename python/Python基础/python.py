@@ -78,9 +78,6 @@ print("Hi,%s" % "World")
 # 所输入数值的位置索引和占位{索引}相同
 print("Hello {0}".format('World'))
 
-# 练习!!
-# 手动录入一位同学的成绩，并以格式化形式展示
-
 
 # Python集合
 # list (list是Python内置数据类型(列表),例如，列出班级部分学生姓名)
@@ -228,8 +225,6 @@ my_instance(10)
 # my_instance(10, 11)
 # my_instance() takes 1 positional argument but 2 were given 错误信息
 
-
-# 练习 : 定义一个函数，计算1-100的和返回并输出，若有非数值类型，则抛出错误信息 !!!!
 
 
 # 集合切片
